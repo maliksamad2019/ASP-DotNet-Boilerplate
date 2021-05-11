@@ -20,9 +20,9 @@ namespace ASP_Net_Boilerplate.Controllers
         private readonly Dictionary<string, string> users = new Dictionary<string, string>() { { "user1", "password1" }, { "user2", "password2" } };
 
         private const string SecretKey = "this is my custom Secret key for authentication";
-
+        private const string allowedRolle = "Customer";
         [HttpGet] 
-        [Authorize]
+        [Authorize(Roles = allowedRolle+", Admin, Dev")]
         public IActionResult Get()
         {
             return Ok("this is secure API");
@@ -52,6 +52,9 @@ namespace ASP_Net_Boilerplate.Controllers
                 claims: new[] {
                     new Claim(JwtRegisteredClaimNames.Sub, userCred.Username),
                     new Claim("another-key", "another-value"),
+                    new Claim("boilerplate-roles", allowedRolle),
+                    new Claim("boilerplate-roles", "Admin"),
+                    new Claim("boilerplate-roles", "Dev"),
                 },
                 expires: DateTime.UtcNow.AddMinutes(5),
                 signingCredentials: new SigningCredentials(

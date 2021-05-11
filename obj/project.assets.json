@@ -3554,11 +3554,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\malik\\source\\repos\\ASP-Net-Boilerplate\\ASP-Net-Boilerplate.csproj",
+      "projectUniqueName": "C:\\Users\\malik\\Desktop\\Learning\\ASP\\ASP-Net-Boilerplate\\ASP-Net-Boilerplate.csproj",
       "projectName": "ASP-Net-Boilerplate",
-      "projectPath": "C:\\Users\\malik\\source\\repos\\ASP-Net-Boilerplate\\ASP-Net-Boilerplate.csproj",
+      "projectPath": "C:\\Users\\malik\\Desktop\\Learning\\ASP\\ASP-Net-Boilerplate\\ASP-Net-Boilerplate.csproj",
       "packagesPath": "C:\\Users\\malik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\malik\\source\\repos\\ASP-Net-Boilerplate\\obj\\",
+      "outputPath": "C:\\Users\\malik\\Desktop\\Learning\\ASP\\ASP-Net-Boilerplate\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -45,6 +45,7 @@ namespace ASP_Net_Boilerplate
                     ValidateIssuer = true,
                     ValidAudience= "malik-audience",
                     ValidateAudience = true,
+                    RoleClaimType = "boilerplate-roles",
                 };
             });
         }
