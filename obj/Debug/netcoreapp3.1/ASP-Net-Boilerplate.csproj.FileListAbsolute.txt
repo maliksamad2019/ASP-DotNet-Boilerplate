@@ -44,7 +44,6 @@ C:\Users\malik\Desktop\Learning\ASP\ASP-Net-Boilerplate\bin\Debug\netcoreapp3.1\
 C:\Users\malik\Desktop\Learning\ASP\ASP-Net-Boilerplate\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Users\malik\Desktop\Learning\ASP\ASP-Net-Boilerplate\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\malik\Desktop\Learning\ASP\ASP-Net-Boilerplate\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\malik\Desktop\Learning\ASP\ASP-Net-Boilerplate\obj\Debug\netcoreapp3.1\ASP-Net-Boilerplate.csprojAssemblyReference.cache
 C:\Users\malik\Desktop\Learning\ASP\ASP-Net-Boilerplate\obj\Debug\netcoreapp3.1\ASP-Net-Boilerplate.AssemblyInfoInputs.cache
 C:\Users\malik\Desktop\Learning\ASP\ASP-Net-Boilerplate\obj\Debug\netcoreapp3.1\ASP-Net-Boilerplate.AssemblyInfo.cs
 C:\Users\malik\Desktop\Learning\ASP\ASP-Net-Boilerplate\obj\Debug\netcoreapp3.1\ASP-Net-Boilerplate.csproj.CoreCompileInputs.cache
@@ -56,3 +55,4 @@ C:\Users\malik\Desktop\Learning\ASP\ASP-Net-Boilerplate\obj\Debug\netcoreapp3.1\
 C:\Users\malik\Desktop\Learning\ASP\ASP-Net-Boilerplate\obj\Debug\netcoreapp3.1\ASP-Net-Boilerplate.dll
 C:\Users\malik\Desktop\Learning\ASP\ASP-Net-Boilerplate\obj\Debug\netcoreapp3.1\ASP-Net-Boilerplate.pdb
 C:\Users\malik\Desktop\Learning\ASP\ASP-Net-Boilerplate\obj\Debug\netcoreapp3.1\ASP-Net-Boilerplate.genruntimeconfig.cache
+C:\Users\malik\Desktop\Learning\ASP\ASP-Net-Boilerplate\obj\Debug\netcoreapp3.1\ASP-Net-Boilerplate.csprojAssemblyReference.cache

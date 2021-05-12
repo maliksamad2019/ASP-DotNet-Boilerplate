@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using ASP_Net_Boilerplate.Common;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -21,11 +22,20 @@ namespace ASP_Net_Boilerplate.Controllers
 
         private const string SecretKey = "this is my custom Secret key for authentication";
         private const string allowedRolle = "Customer";
+
+        public readonly CurrentUser currentUser;
+
+        public AuthenticationController(CurrentUser currentUser)
+        {
+            this.currentUser = currentUser;
+        }
+
         [HttpGet] 
         [Authorize(Roles = allowedRolle+", Admin, Dev")]
         public IActionResult Get()
-        {
-            return Ok("this is secure API");
+        { 
+            var userClaims = currentUser.Claims;
+            return Ok(userClaims);
         }
 
         [HttpGet("GetToken")]
@@ -43,18 +53,18 @@ namespace ASP_Net_Boilerplate.Controllers
         {
             if (!users.Any(item => item.Key == userCred.Username && item.Value == userCred.Password))
                 return string.Empty;
-
-
+             
             // Package: System.IdentityModel.Tokens.Jwt
             JwtSecurityToken token = new JwtSecurityToken(
                 issuer: "malik",
                 audience: "malik-audience",
                 claims: new[] {
-                    new Claim(JwtRegisteredClaimNames.Sub, userCred.Username),
-                    new Claim("another-key", "another-value"),
-                    new Claim("boilerplate-roles", allowedRolle),
-                    new Claim("boilerplate-roles", "Admin"),
-                    new Claim("boilerplate-roles", "Dev"),
+                    //new Claim(JwtRegisteredClaimNames.Sub, userCred.Username),
+                    new Claim(UserClaimsType.Email, "Maliksamad2019@gmail.com"),
+                    new Claim(UserClaimsType.Username, "Maliksamad2019"),
+                    new Claim(UserClaimsType.Roles, allowedRolle),
+                    new Claim(UserClaimsType.Roles, "Admin"),
+                    new Claim(UserClaimsType.Roles, "Dev"),
                 },
                 expires: DateTime.UtcNow.AddMinutes(5),
                 signingCredentials: new SigningCredentials(
